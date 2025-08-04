@@ -1,8 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import { assets } from "@/Assets/assets";
 import Image from "next/image";
 
 const Contact = () => {
+  const [result, setResult] = useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "f1e28311-5678-4f8a-8ae5-6426c14e0f34");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
+
   return (
     <div
       id="contact"
@@ -23,19 +48,23 @@ const Contact = () => {
         features, I am here to help bring your vision to life. Let's work
         together to create something amazing!
       </p>
-      <form className="max-w-2xl mx-auto">
+      <form onSubmit={onSubmit} className="max-w-2xl mx-auto">
         <div className="grid md:grid-cols-2 gap-6 mb-6">
           <input
             type="text"
             placeholder="Enter Your Name"
             className="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white font-Ovo"
             required
+            name="name"
+            suppressHydrationWarning={true}
           />
           <input
             type="email"
             placeholder="Enter Your Email"
             className="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white font-Ovo"
             required
+            name="email"
+            suppressHydrationWarning={true}
           />
         </div>
         <textarea
@@ -43,10 +72,13 @@ const Contact = () => {
           placeholder="Enter Your Message"
           className="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 font-Ovo"
           required
+          name="message"
+          suppressHydrationWarning={true}
         ></textarea>
         <button
           className="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 font-Ovo"
           type="submit"
+          suppressHydrationWarning={true}
         >
           Submit now
           <Image
@@ -55,6 +87,9 @@ const Contact = () => {
             className="w-4"
           />
         </button>
+        {result && (
+          <p className="mt-4 text-center font-Ovo text-green-600">{result}</p>
+        )}
       </form>
     </div>
   );
