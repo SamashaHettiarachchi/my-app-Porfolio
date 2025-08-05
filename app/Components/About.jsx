@@ -55,15 +55,12 @@ const About = ({ isdarkMode }) => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 1.1 }}
           >
-            I am an IT undergraduate at the University of Moratuwa with a strong
-            passion for developing scalable, user-centric software solutions.
-            Motivated by curiosity and a commitment to continuous learning, I
-            actively explore emerging technologies and transform ideas into
-            effective, practical applications. I excel in collaborative,
-            fast-paced environments and strive to deliver impactful results
-            through innovative problem-solving. Beyond coding, I have a creative
-            side fueled by interests in music, fashion design, and hand-crafted
-            art, which continually inspire my approach to technology and design.
+            I am an IT undergraduate at the University of Moratuwa, passionate
+            about developing scalable, user-centric software solutions.
+            Motivated by curiosity and continuous learning, I explore emerging
+            technologies to turn ideas into practical applications. I thrive in
+            collaborative environments and aim to deliver impactful results
+            through innovative problem-solving.
           </motion.p>
           <motion.ul
             className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl"
@@ -74,21 +71,26 @@ const About = ({ isdarkMode }) => {
             {infoList.map(({ icon, iconDark, title, description }, index) => (
               <motion.li
                 key={index}
-                className="bg-gradient-to-br from-white via-purple-50/50 to-pink-50/50 dark:from-gray-800/70 dark:via-purple-900/30 dark:to-pink-900/30 backdrop-blur-sm border border-purple-200/50 dark:border-purple-700/50 rounded-2xl p-6 cursor-pointer hover:bg-gradient-to-br hover:from-gradient-to-br hover:from-purple-100 hover:via-pink-100 hover:to-cyan-100 dark:hover:from-purple-800/50 dark:hover:via-pink-800/50 dark:hover:to-cyan-800/50 hover:-translate-y-2 hover:shadow-xl hover:shadow-purple-500/20 transition-all duration-500 group hover:border-purple-300 dark:hover:border-purple-500"
+                className="bg-gradient-to-br from-white via-purple-50/50 to-pink-50/50 dark:from-gray-800/70 dark:via-purple-900/30 dark:to-pink-900/30 backdrop-blur-sm border border-purple-200/50 dark:border-purple-700/50 rounded-2xl p-6 cursor-pointer hover:bg-gradient-to-br hover:from-purple-100 hover:via-pink-100 hover:to-cyan-100 dark:hover:from-purple-800/50 dark:hover:via-pink-800/50 dark:hover:to-cyan-800/50 hover:-translate-y-2 hover:shadow-xl hover:shadow-purple-500/20 transition-all duration-500 group hover:border-purple-300 dark:hover:border-purple-500"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 1.4 + index * 0.1 }}
                 whileHover={{ scale: 1.02 }}
               >
-                <Image
-                  src={isdarkMode ? iconDark : icon}
-                  alt={title}
-                  className="w-7 mt-3 group-hover:scale-110 transition-transform duration-300"
-                />
-                <h3 className="my-4 font-semibold text-gray-800 dark:text-white group-hover:bg-gradient-to-r group-hover:from-purple-600 group-hover:to-pink-600 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">
+                <div className="relative mb-4">
+                  <div className="absolute inset-0 bg-gradient-to-br from-purple-500/20 via-pink-500/20 to-orange-500/20 rounded-xl blur-sm opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
+                  <div className="relative bg-gradient-to-br from-white to-purple-50/80 dark:from-gray-700 dark:to-purple-900/50 p-3 rounded-xl w-fit group-hover:scale-110 transition-all duration-300">
+                    <Image
+                      src={isdarkMode ? iconDark : icon}
+                      alt={title}
+                      className="w-8 h-8 group-hover:brightness-110 transition-all duration-300"
+                    />
+                  </div>
+                </div>
+                <h3 className="mb-3 text-lg font-bold text-gray-800 dark:text-white group-hover:bg-gradient-to-r group-hover:from-purple-600 group-hover:via-pink-600 group-hover:to-orange-600 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">
                   {title}
                 </h3>
-                <p className="text-gray-600 text-sm dark:text-white/80 leading-relaxed">
+                <p className="text-gray-600 text-sm dark:text-white/85 leading-relaxed font-medium">
                   {description}
                 </p>
               </motion.li>
