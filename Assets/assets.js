@@ -1,157 +1,79 @@
-import user_image from "./user-image.png";
-import code_icon from "./code-icon.png";
-import code_icon_dark from "./code-icon-dark.png";
-import edu_icon from "./edu-icon.png";
-import edu_icon_dark from "./edu-icon-dark.png";
-import project_icon from "./project-icon.png";
-import project_icon_dark from "./project-icon-dark.png";
-import vscode from "./vscode.png";
-import firebase from "./firebase.png";
-import figma from "./figma.png";
-import git from "./git.png";
-import mongodb from "./mongodb.png";
-import right_arrow_white from "./right-arrow-white.png";
-import logo from "./logo.png";
-import logo_dark from "./logo_dark.png";
-import mail_icon from "./mail_icon.png";
-import mail_icon_dark from "./mail_icon_dark.png";
-import profile_img from "./profile-img.png";
-import download_icon from "./download-icon.png";
-import hand_icon from "./hand-icon.png";
-import header_bg_color from "./header-bg-color.png";
-import moon_icon from "./moon_icon.png";
-import sun_icon from "./sun_icon.png";
-import arrow_icon from "./arrow-icon.png";
-import arrow_icon_dark from "./arrow-icon-dark.png";
-import menu_black from "./menu-black.png";
-import menu_white from "./menu-white.png";
-import close_black from "./close-black.png";
-import close_white from "./close-white.png";
-import web_icon from "./web-icon.png";
-import mobile_icon from "./mobile-icon.png";
-import ui_icon from "./ui-icon.png";
-import graphics_icon from "./graphics-icon.png";
-import right_arrow from "./right-arrow.png";
-import send_icon from "./send-icon.png";
-import right_arrow_bold from "./right-arrow-bold.png";
-import right_arrow_bold_dark from "./right-arrow-bold-dark.png";
-
-// Technology specific icons
-import java_icon from "./java.png";
-import javascript_icon from "./java_script.png";
-import php_icon from "./PHP.png";
-import c_icon from "./C_lan.png";
-import html_icon from "./HTML (2).png";
-import css_icon from "./CSS_icon.png";
-import react_icon from "./react.png";
-import nodejs_icon from "./node.js.png";
-import nextjs_icon from "./next.js-48.png";
-import express_icon from "./icons8-express-js-50.png";
-import react_native_icon from "./react _native.png";
-import expo_icon from "./expo-icon.png";
-import mysql_icon from "./mySql.png";
-import mssql_icon from "./sql-server_icon.png";
-import mongo_dp_icon from "./mongo_dp.png";
-import aws_icon from "./aws.png";
-import android_studio_icon from "./android-studio-48.png";
-import jwt_icon from "./JWT_token_icon.png";
-
-// Social Media Icons
-import linkedin_icon from "./icons8-linkedin-50.png";
-import github_icon from "./icons8-github-50.png";
-import facebook_icon from "./icons8-facebook-50.png";
-import medium_icon from "./icons8-medium-50.png";
-
-// Skills category icons
-import coding_icon from "./coding.png";
-import framework_icon from "./framework.png";
-import database_icon from "./database.png";
-import skill_icon from "./skill.png";
-
-// Soft skills icons
-import problemsolving_icon from "./problemsolving.png";
-import teamwork_icon from "./teamwork.png";
-import adapt_icon from "./adapt.png";
-import communication_icon from "./communication.png";
-import critical_thinking_icon from "./critical_thinking.png";
-import support_icon from "./support.png";
-import leadership_icon from "./leadership.png";
-
+// Assets using public folder paths for better deployment compatibility
 export const assets = {
-  user_image,
-  code_icon,
-  code_icon_dark,
-  edu_icon,
-  edu_icon_dark,
-  project_icon,
-  project_icon_dark,
-  vscode,
-  firebase,
-  figma,
-  git,
-  mongodb,
-  right_arrow_white,
-  logo,
-  logo_dark,
-  mail_icon,
-  mail_icon_dark,
-  profile_img,
-  download_icon,
-  hand_icon,
-  header_bg_color,
-  moon_icon,
-  sun_icon,
-  arrow_icon,
-  arrow_icon_dark,
-  menu_black,
-  menu_white,
-  close_black,
-  close_white,
-  web_icon,
-  mobile_icon,
-  ui_icon,
-  graphics_icon,
-  right_arrow,
-  send_icon,
-  right_arrow_bold,
-  right_arrow_bold_dark,
+  user_image: "/user-image.png",
+  code_icon: "/code-icon.png",
+  code_icon_dark: "/code-icon-dark.png",
+  edu_icon: "/edu-icon.png",
+  edu_icon_dark: "/edu-icon-dark.png",
+  project_icon: "/project-icon.png",
+  project_icon_dark: "/project-icon-dark.png",
+  vscode: "/vscode.png",
+  firebase: "/firebase.png",
+  figma: "/figma.png",
+  git: "/git.png",
+  mongodb: "/mongodb.png",
+  right_arrow_white: "/right-arrow-white.png",
+  logo: "/logo.png",
+  logo_dark: "/logo_dark.png",
+  mail_icon: "/mail_icon.png",
+  mail_icon_dark: "/mail_icon_dark.png",
+  profile_img: "/profile-img.png",
+  download_icon: "/download-icon.png",
+  hand_icon: "/hand-icon.png",
+  header_bg_color: "/header-bg-color.png",
+  moon_icon: "/moon_icon.png",
+  sun_icon: "/sun_icon.png",
+  arrow_icon: "/arrow-icon.png",
+  arrow_icon_dark: "/arrow-icon-dark.png",
+  menu_black: "/menu-black.png",
+  menu_white: "/menu-white.png",
+  close_black: "/close-black.png",
+  close_white: "/close-white.png",
+  web_icon: "/web-icon.png",
+  mobile_icon: "/mobile-icon.png",
+  ui_icon: "/ui-icon.png",
+  graphics_icon: "/graphics-icon.png",
+  right_arrow: "/right-arrow.png",
+  send_icon: "/send-icon.png",
+  right_arrow_bold: "/right-arrow-bold.png",
+  right_arrow_bold_dark: "/right-arrow-bold-dark.png",
   // Technology specific icons
-  java_icon,
-  javascript_icon,
-  php_icon,
-  c_icon,
-  html_icon,
-  css_icon,
-  react_icon,
-  nodejs_icon,
-  nextjs_icon,
-  express_icon,
-  react_native_icon,
-  expo_icon,
-  mysql_icon,
-  mssql_icon,
-  mongo_dp_icon,
-  aws_icon,
-  android_studio_icon,
-  jwt_icon,
+  java_icon: "/java.png",
+  javascript_icon: "/java_script.png",
+  php_icon: "/PHP.png",
+  c_icon: "/C_lan.png",
+  html_icon: "/HTML (2).png",
+  css_icon: "/CSS_icon.png",
+  react_icon: "/react.png",
+  nodejs_icon: "/node.js.png",
+  nextjs_icon: "/next.js-48.png",
+  express_icon: "/icons8-express-js-50.png",
+  react_native_icon: "/react _native.png",
+  expo_icon: "/expo-icon.png",
+  mysql_icon: "/mySql.png",
+  mssql_icon: "/sql-server_icon.png",
+  mongo_dp_icon: "/mongo_dp.png",
+  aws_icon: "/aws.png",
+  android_studio_icon: "/android-studio-48.png",
+  jwt_icon: "/JWT_token_icon.png",
   // Social Media Icons
-  linkedin_icon,
-  github_icon,
-  facebook_icon,
-  medium_icon,
+  linkedin_icon: "/icons8-linkedin-50.png",
+  github_icon: "/icons8-github-50.png",
+  facebook_icon: "/icons8-facebook-50.png",
+  medium_icon: "/icons8-medium-50.png",
   // Skills category icons
-  coding_icon,
-  framework_icon,
-  database_icon,
-  skill_icon,
+  coding_icon: "/coding.png",
+  framework_icon: "/framework.png",
+  database_icon: "/database.png",
+  skill_icon: "/skill.png",
   // Soft skills icons
-  problemsolving_icon,
-  teamwork_icon,
-  adapt_icon,
-  communication_icon,
-  critical_thinking_icon,
-  support_icon,
-  leadership_icon,
+  problemsolving_icon: "/problemsolving.png",
+  teamwork_icon: "/teamwork.png",
+  adapt_icon: "/adapt.png",
+  communication_icon: "/communication.png",
+  critical_thinking_icon: "/critical_thinking.png",
+  support_icon: "/support.png",
+  leadership_icon: "/leadership.png",
 };
 
 export const workData = [
