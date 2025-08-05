@@ -36,6 +36,26 @@ import send_icon from "./send-icon.png";
 import right_arrow_bold from "./right-arrow-bold.png";
 import right_arrow_bold_dark from "./right-arrow-bold-dark.png";
 
+// Technology specific icons
+import java_icon from "./java.png";
+import javascript_icon from "./java_script.png";
+import php_icon from "./PHP.png";
+import c_icon from "./C_lan.png";
+import html_icon from "./HTML (2).png";
+import css_icon from "./CSS_icon.png";
+import react_icon from "./react.png";
+import nodejs_icon from "./node.js.png";
+import nextjs_icon from "./next.js-48.png";
+import express_icon from "./icons8-express-js-50.png";
+import react_native_icon from "./react _native.png";
+import expo_icon from "./expo-icon.png";
+import mysql_icon from "./mySql.png";
+import mssql_icon from "./sql-server_icon.png";
+import mongo_dp_icon from "./mongo_dp.png";
+import aws_icon from "./aws.png";
+import android_studio_icon from "./android-studio-48.png";
+import jwt_icon from "./JWT_token_icon.png";
+
 export const assets = {
   user_image,
   code_icon,
@@ -74,6 +94,25 @@ export const assets = {
   send_icon,
   right_arrow_bold,
   right_arrow_bold_dark,
+  // Technology specific icons
+  java_icon,
+  javascript_icon,
+  php_icon,
+  c_icon,
+  html_icon,
+  css_icon,
+  react_icon,
+  nodejs_icon,
+  nextjs_icon,
+  express_icon,
+  react_native_icon,
+  expo_icon,
+  mysql_icon,
+  mssql_icon,
+  mongo_dp_icon,
+  aws_icon,
+  android_studio_icon,
+  jwt_icon,
 };
 
 export const workData = [
@@ -96,6 +135,69 @@ export const workData = [
     title: "UI/UX designing",
     description: "UI/UX Design",
     bgImage: "/work-4.png",
+  },
+];
+
+export const skillsData = [
+  {
+    icon: assets.code_icon,
+    title: "Programming Languages",
+    level: "Advanced",
+    technologies: [
+      { icon: assets.java_icon, name: "Java" },
+      { icon: assets.javascript_icon, name: "JavaScript" },
+      { icon: assets.php_icon, name: "PHP" },
+      { icon: assets.c_icon, name: "C" },
+    ],
+  },
+  {
+    icon: assets.web_icon,
+    title: "Frameworks & Libraries",
+    level: "Advanced",
+    technologies: [
+      { icon: assets.html_icon, name: "HTML" },
+      { icon: assets.css_icon, name: "CSS" },
+      { icon: assets.react_icon, name: "React.js" },
+      { icon: assets.nextjs_icon, name: "Next.js" },
+      { icon: assets.nodejs_icon, name: "Node.js" },
+      { icon: assets.express_icon, name: "Express.js" },
+      { icon: assets.react_native_icon, name: "React Native" },
+      { icon: assets.expo_icon, name: "Expo" },
+    ],
+  },
+  {
+    icon: assets.mongodb,
+    title: "Databases",
+    level: "Intermediate",
+    technologies: [
+      { icon: assets.mysql_icon, name: "MySQL" },
+      { icon: assets.mssql_icon, name: "MSSQL" },
+      { icon: assets.mongodb, name: "MongoDB" },
+    ],
+  },
+  {
+    icon: assets.git,
+    title: "Tools & Platforms",
+    level: "Advanced",
+    technologies: [
+      { icon: assets.git, name: "Git" },
+      { icon: assets.aws_icon, name: "AWS" },
+      { icon: assets.firebase, name: "Firebase" },
+      { icon: assets.vscode, name: "VS Code" },
+      { icon: assets.android_studio_icon, name: "Android Studio" },
+      { icon: assets.figma, name: "Figma" },
+    ],
+  },
+  {
+    icon: assets.ui_icon,
+    title: "Soft Skills",
+    level: "Advanced",
+    technologies: [
+      { icon: assets.ui_icon, name: "Problem-solving" },
+      { icon: assets.ui_icon, name: "Team Work" },
+      { icon: assets.ui_icon, name: "Adaptability" },
+      { icon: assets.ui_icon, name: "Communication" },
+    ],
   },
 ];
 
@@ -132,20 +234,22 @@ export const infoList = [
   {
     icon: assets.code_icon,
     iconDark: assets.code_icon_dark,
-    title: "Languages",
-    description: "HTML, CSS, JavaScript React Js, Next Js",
+    title: "Personal Values",
+    description:
+      "✨ Curious, adaptable, and driven to solve real-world problems through collaboration and continuous growth.",
   },
   {
     icon: assets.edu_icon,
     iconDark: assets.edu_icon_dark,
     title: "Education",
-    description: "B.Tech in Computer Science",
+    description: "🎓University of Moratuwa Faculty of Information Technology",
   },
   {
     icon: assets.project_icon,
     iconDark: assets.project_icon_dark,
-    title: "Projects",
-    description: "Built more than 5 projects",
+    title: "Creative Side",
+    description:
+      "🎧🖌️✍️ Creative at heart — I love music, fashion design, hand-drawn art, and writing that fuels my thinking beyond code.",
   },
 ];
 
