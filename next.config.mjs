@@ -3,10 +3,9 @@ const nextConfig = {
   output: 'export',
   trailingSlash: true,
   images: {
-    unoptimized: true,
-    loader: 'custom',
-    loaderFile: './image-loader.js'
-  }
+    unoptimized: true
+  },
+  serverExternalPackages: ['sharp']
 };
 
 export default nextConfig;
