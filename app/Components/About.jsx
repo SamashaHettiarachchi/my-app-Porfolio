@@ -1,34 +1,71 @@
 import { assets, infoList, toolsData } from "@/Assets/assets";
 import React from "react";
 import Image from "next/image";
+import { motion } from "motion/react";
 
 const About = ({ isdarkMode }) => {
   return (
-    <div id="about" className="w-full px-[12%] py-10 scroll-mt-20">
-      <h4 className="text-center mb-2 text-lg font-Ovo dark:text-white">
+    <motion.div
+      id="about"
+      className="w-full px-[12%] py-10 scroll-mt-20"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
+      <motion.h4
+        className="text-center mb-2 text-lg font-Ovo dark:text-white"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.3 }}
+      >
         Introduction
-      </h4>
-      <h2 className="text-center text-5xl font-Ovo dark:text-white">
+      </motion.h4>
+      <motion.h2
+        className="text-center text-5xl font-Ovo dark:text-white"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, delay: 0.5 }}
+      >
         About me
-      </h2>
+      </motion.h2>
       <div className="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
-        <div className="w-64 sm:w-80 rounded-3xl max-w-none">
+        <motion.div
+          className="w-64 sm:w-80 rounded-3xl max-w-none"
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: 0.7 }}
+        >
           <Image
             src={assets.user_image}
             alt="user"
             className="w-full rounded-3xl"
           />
-        </div>
-        <div className="flex-1">
-          <p className="mb-10 max-w-2xl font-Ovo dark:text-white/90">
+        </motion.div>
+        <motion.div
+          className="flex-1"
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: 0.9 }}
+        >
+          <motion.p
+            className="mb-10 max-w-2xl font-Ovo dark:text-white/90"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 1.1 }}
+          >
             I'm a passionate Front-End Developer with a strong focus on building
             responsive, user-friendly web interfaces. I specialize in modern
             JavaScript frameworks like React and Vue, and have experience
             turning complex UI designs into clean, maintainable code. I enjoy
             transforming ideas into interactive, accessible digital experiences
             that work seamlessly across devices.
-          </p>
-          <ul className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
+          </motion.p>
+          <motion.ul
+            className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 1.3 }}
+          >
             {infoList.map(({ icon, iconDark, title, description }, index) => (
               <li
                 key={index}
@@ -47,11 +84,21 @@ const About = ({ isdarkMode }) => {
                 </p>
               </li>
             ))}
-          </ul>
-          <h4 className="my-6 text-gray-700 font-Ovo dark:text-white">
+          </motion.ul>
+          <motion.h4
+            className="my-6 text-gray-700 font-Ovo dark:text-white"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 1.5 }}
+          >
             Tools I use
-          </h4>
-          <ul className="flex items-center gap-3 sm:gap-5">
+          </motion.h4>
+          <motion.ul
+            className="flex items-center gap-3 sm:gap-5"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 1.7 }}
+          >
             {toolsData.map((tool, index) => (
               <li
                 className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500 dark:border-white/50"
@@ -60,10 +107,10 @@ const About = ({ isdarkMode }) => {
                 <Image src={tool} alt="Tool" className="w-5 sm:w-7" />
               </li>
             ))}
-          </ul>
-        </div>
+          </motion.ul>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

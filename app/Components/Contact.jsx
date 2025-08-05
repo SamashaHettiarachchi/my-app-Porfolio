@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { assets } from "@/Assets/assets";
 import Image from "next/image";
+import { motion } from "motion/react";
 
 const Contact = ({ isdarkMode }) => {
   const [result, setResult] = useState("");
@@ -29,21 +30,39 @@ const Contact = ({ isdarkMode }) => {
   };
 
   return (
-    <div
+    <motion.div
       id="contact"
       className="w-full px-[12%] py-10 scroll-mt-20 relative bg-no-repeat bg-center dark:bg-none"
       style={{
         backgroundImage: isdarkMode ? "none" : "url('/footer-bg-color.png')",
         backgroundSize: "90% auto",
       }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1 }}
     >
-      <h4 className="text-center mb-2 text-lg font-Ovo dark:text-white">
+      <motion.h4
+        className="text-center mb-2 text-lg font-Ovo dark:text-white"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.3 }}
+      >
         Get in Touch
-      </h4>
-      <h2 className="text-center text-5xl font-Ovo dark:text-white">
+      </motion.h4>
+      <motion.h2
+        className="text-center text-5xl font-Ovo dark:text-white"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, delay: 0.5 }}
+      >
         Contact Me
-      </h2>
-      <p className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo dark:text-white/90">
+      </motion.h2>
+      <motion.p
+        className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo dark:text-white/90"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.7 }}
+      >
         I offer a range of services to help you build and enhance your web
         presence. From responsive web design to front-end development using
         modern frameworks, I am dedicated to delivering high-quality,
@@ -51,9 +70,20 @@ const Contact = ({ isdarkMode }) => {
         website, an update to an existing one, or assistance with specific
         features, I am here to help bring your vision to life. Let's work
         together to create something amazing!
-      </p>
-      <form onSubmit={onSubmit} className="max-w-2xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-6 mb-6">
+      </motion.p>
+      <motion.form
+        onSubmit={onSubmit}
+        className="max-w-2xl mx-auto"
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.9 }}
+      >
+        <motion.div
+          className="grid md:grid-cols-2 gap-6 mb-6"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 1.1 }}
+        >
           <input
             type="text"
             placeholder="Enter Your Name"
@@ -70,19 +100,27 @@ const Contact = ({ isdarkMode }) => {
             name="email"
             suppressHydrationWarning={true}
           />
-        </div>
-        <textarea
+        </motion.div>
+        <motion.textarea
           rows="6"
           placeholder="Enter Your Message"
           className="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 font-Ovo dark:bg-darkHover dark:border-white/50 dark:text-white dark:placeholder-white/60"
           required
           name="message"
           suppressHydrationWarning={true}
-        ></textarea>
-        <button
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 1.3 }}
+        ></motion.textarea>
+        <motion.button
           className="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 font-Ovo dark:bg-darkHover dark:border dark:border-white/50 dark:hover:bg-white/20"
           type="submit"
           suppressHydrationWarning={true}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 1.5 }}
+          whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
+          whileTap={{ scale: 0.95 }}
         >
           Submit now
           <Image
@@ -90,14 +128,19 @@ const Contact = ({ isdarkMode }) => {
             alt="Arrow Icon"
             className="w-4"
           />
-        </button>
+        </motion.button>
         {result && (
-          <p className="mt-4 text-center font-Ovo text-green-600 dark:text-green-400">
+          <motion.p
+            className="mt-4 text-center font-Ovo text-green-600 dark:text-green-400"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
             {result}
-          </p>
+          </motion.p>
         )}
-      </form>
-    </div>
+      </motion.form>
+    </motion.div>
   );
 };
 
