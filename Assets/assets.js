@@ -56,6 +56,21 @@ import aws_icon from "./aws.png";
 import android_studio_icon from "./android-studio-48.png";
 import jwt_icon from "./JWT_token_icon.png";
 
+// Skills category icons
+import coding_icon from "./coding.png";
+import framework_icon from "./framework.png";
+import database_icon from "./database.png";
+import skill_icon from "./skill.png";
+
+// Soft skills icons
+import problemsolving_icon from "./problemsolving.png";
+import teamwork_icon from "./teamwork.png";
+import adapt_icon from "./adapt.png";
+import communication_icon from "./communication.png";
+import critical_thinking_icon from "./critical_thinking.png";
+import support_icon from "./support.png";
+import leadership_icon from "./leadership.png";
+
 export const assets = {
   user_image,
   code_icon,
@@ -113,34 +128,123 @@ export const assets = {
   aws_icon,
   android_studio_icon,
   jwt_icon,
+  // Skills category icons
+  coding_icon,
+  framework_icon,
+  database_icon,
+  skill_icon,
+  // Soft skills icons
+  problemsolving_icon,
+  teamwork_icon,
+  adapt_icon,
+  communication_icon,
+  critical_thinking_icon,
+  support_icon,
+  leadership_icon,
 };
 
 export const workData = [
   {
-    title: "Frontend project",
-    description: "Web Design",
-    bgImage: "/work-1.png",
+    title: "ATG Healthcare Care Plan Manager",
+    description: "Mobile & Web Application",
+    type: "Second-Year Software Project",
+    duration: "Dec 2024 – Present",
+    bgImage: "/ATG-Healthcare.jpg",
+    fullDescription:
+      "Developed a cross-platform healthcare solution to streamline care coordination between patients, care navigators, and administrators. Key features include personalized care plan tracking, medication and appointment scheduling with reminders, readiness-based consultation booking, secure document sharing, real-time chat, and Google Calendar integration.",
+    technologies: [
+      "React Native",
+      "Expo Go",
+      "AWS RDS",
+      "AWS S3",
+      "AWS Amplify",
+      "AWS Cognito",
+      "AWS Lambda",
+      "Firebase",
+      "Calendly",
+      "Node.js",
+      "Python",
+      "API Gateway",
+      "React.js",
+      "Express.js",
+      "MongoDB",
+    ],
+    category: "Healthcare Tech",
+    demoUrl: "#", // Add your live demo URL here
+    githubUrl:
+      "https://github.com/AymanTechGlobal/atg-healthcare-careplan-manager", // Add your GitHub repository URL here
+    detailsUrl: "#", // Add your project details URL here
   },
   {
-    title: "Geo based app",
-    description: "Mobile App",
-    bgImage: "/work-2.png",
+    title: "Full-Stack User Management System",
+    description: "MERN Stack Application",
+    type: "Web Development Project",
+    duration: "May – July 2025",
+    bgImage: "/UserManagement_system.jpg",
+    fullDescription:
+      "Built a responsive user management app with user authentication, role-based access (admin/user), and full CRUD operations using MongoDB, Express.js, React, and Node.js. Deployed frontend on Vercel and backend on Railway, with a cloud-hosted MongoDB Atlas database.",
+    technologies: [
+      "React",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JWT",
+      "bcrypt",
+      "Vercel",
+      "Railway",
+      "MongoDB Atlas",
+    ],
+    category: "Full-Stack Web",
+    demoUrl: "https://my-full-stack-one.vercel.app/", // Add your live demo URL here
+    githubUrl: "https://github.com/SamashaHettiarachchi/my_full_stack", // Add your GitHub repository URL here
+    detailsUrl: "#", // Add your project details URL here
   },
   {
-    title: "Photography site",
-    description: "Web Design",
-    bgImage: "/work-3.png",
+    title: "Snake Game",
+    description: "Java Desktop Application",
+    type: "Desktop Game Development",
+    duration: "Sep – Oct 2024",
+    bgImage: "/Snakegame.jpg",
+    fullDescription:
+      "Developed a classic Snake game using Java Swing, implementing game loops, collision detection, and keyboard event handling. The project demonstrates strong object-oriented design and GUI programming.",
+    technologies: [
+      "Java",
+      "Java Swing",
+      "OOP",
+      "Event Handling",
+      "GUI Programming",
+    ],
+    category: "Game Development",
+    githubUrl: "https://github.com/SamashaHettiarachchi/Snake_game", // Add your GitHub repository URL here
+    detailsUrl:
+      "https://www.linkedin.com/posts/samasha-hettiarachchi-635a79270_javadevelopment-snakegame-oop-activity-7251095673662537728-wdcd?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEJdr0kBlVHSPHx0XepYKWJpHie8IXnz2wc", // Add your project details URL here
   },
   {
-    title: "UI/UX designing",
-    description: "UI/UX Design",
-    bgImage: "/work-4.png",
+    title: "Drive Assistance System",
+    description: "Hardware Project",
+    type: "Embedded Systems Project",
+    duration: "Sep 2023 – April 2024",
+    bgImage: "/Drive_assistem_system.jpg",
+    fullDescription:
+      "Built an embedded vehicle safety system with adaptive headlights, fog light automation, and lane departure alerts using ESP32, C++, and real-time sensor input. Enabled Bluetooth-based remote control via mobile app.",
+    technologies: [
+      "ESP32",
+      "C++",
+      "Bluetooth",
+      "Real-time Sensors",
+      "Embedded Systems",
+    ],
+    category: "IoT & Hardware",
+    githubUrl:
+      "https://github.com/SamashaHettiarachchi/Level1_hardware_project", // Add your GitHub repository URL here
+    detailsUrl:
+      "https://www.linkedin.com/posts/samasha-hettiarachchi-635a79270_driveassistance-automotivesafety-engineering-activity-7241085944873844736-u-Nq?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEJdr0kBlVHSPHx0XepYKWJpHie8IXnz2wc", // Add your project details URL here
   },
 ];
 
 export const skillsData = [
   {
-    icon: assets.code_icon,
+    icon: assets.coding_icon,
     title: "Programming Languages",
     level: "Advanced",
     technologies: [
@@ -151,7 +255,7 @@ export const skillsData = [
     ],
   },
   {
-    icon: assets.web_icon,
+    icon: assets.framework_icon,
     title: "Frameworks & Libraries",
     level: "Advanced",
     technologies: [
@@ -166,7 +270,7 @@ export const skillsData = [
     ],
   },
   {
-    icon: assets.mongodb,
+    icon: assets.database_icon,
     title: "Databases",
     level: "Intermediate",
     technologies: [
@@ -176,7 +280,7 @@ export const skillsData = [
     ],
   },
   {
-    icon: assets.git,
+    icon: assets.support_icon,
     title: "Tools & Platforms",
     level: "Advanced",
     technologies: [
@@ -189,14 +293,16 @@ export const skillsData = [
     ],
   },
   {
-    icon: assets.ui_icon,
+    icon: assets.skill_icon,
     title: "Soft Skills",
     level: "Advanced",
     technologies: [
-      { icon: assets.ui_icon, name: "Problem-solving" },
-      { icon: assets.ui_icon, name: "Team Work" },
-      { icon: assets.ui_icon, name: "Adaptability" },
-      { icon: assets.ui_icon, name: "Communication" },
+      { icon: assets.problemsolving_icon, name: "Problem-solving" },
+      { icon: assets.teamwork_icon, name: "Team Work" },
+      { icon: assets.adapt_icon, name: "Adaptability" },
+      { icon: assets.communication_icon, name: "Communication" },
+      { icon: assets.critical_thinking_icon, name: "Critical Thinking" },
+      { icon: assets.leadership_icon, name: "Leadership" },
     ],
   },
 ];
