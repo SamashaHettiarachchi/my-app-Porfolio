@@ -32,17 +32,13 @@ const Contact = ({ isdarkMode }) => {
   return (
     <motion.div
       id="contact"
-      className="w-full px-[12%] py-10 scroll-mt-20 relative bg-no-repeat bg-center dark:bg-none"
-      style={{
-        backgroundImage: isdarkMode ? "none" : "url('/footer-bg-color.png')",
-        backgroundSize: "90% auto",
-      }}
+      className="w-full px-[12%] py-16 scroll-mt-20 relative bg-gradient-to-br from-rose-50 via-pink-50 to-purple-50 dark:from-rose-900/20 dark:via-pink-900/20 dark:to-purple-900/20"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
       <motion.h4
-        className="text-center mb-2 text-lg font-Ovo dark:text-white"
+        className="text-center mb-2 text-lg font-Ovo bg-gradient-to-r from-rose-600 via-pink-500 to-purple-500 bg-clip-text text-transparent font-medium tracking-wide"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.3 }}
@@ -50,7 +46,7 @@ const Contact = ({ isdarkMode }) => {
         Get in Touch
       </motion.h4>
       <motion.h2
-        className="text-center text-5xl font-Ovo dark:text-white"
+        className="text-center text-5xl lg:text-6xl font-Ovo font-bold bg-gradient-to-r from-pink-600 via-rose-600 to-purple-600 dark:from-pink-400 dark:via-rose-400 dark:to-purple-400 bg-clip-text text-transparent"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.5 }}
@@ -113,7 +109,7 @@ const Contact = ({ isdarkMode }) => {
           transition={{ duration: 0.6, delay: 1.3 }}
         ></motion.textarea>
         <motion.button
-          className="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 font-Ovo dark:bg-darkHover dark:border dark:border-white/50 dark:hover:bg-white/20"
+          className="py-3 px-8 w-max flex items-center justify-between gap-2 bg-gradient-to-r from-purple-600 via-pink-600 to-orange-600 hover:from-purple-500 hover:via-pink-500 hover:to-orange-500 text-white font-medium rounded-full mx-auto transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/30 border border-white/20 font-Ovo"
           type="submit"
           suppressHydrationWarning={true}
           initial={{ opacity: 0, y: 30 }}
