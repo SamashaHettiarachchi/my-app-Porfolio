@@ -37,7 +37,51 @@ const Footer = ({ isdarkMode }) => {
             alt=""
             className="w-6 opacity-80"
           />
-          greatstackdev@gmail.com
+          sashinisamasha@gmail.com
+        </motion.div>
+
+        {/* Quick Links Section */}
+        <motion.div
+          className="flex flex-wrap justify-center gap-6 mt-8 mb-6"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.5 }}
+        >
+          <motion.a
+            href="#about"
+            className="text-gray-600 dark:text-gray-300 hover:bg-gradient-to-r hover:from-purple-600 hover:to-pink-600 hover:bg-clip-text hover:text-transparent transition-all duration-300 font-medium px-3 py-1 rounded-full hover:scale-105"
+            whileHover={{ y: -1 }}
+          >
+            About
+          </motion.a>
+          <motion.a
+            href="#skills"
+            className="text-gray-600 dark:text-gray-300 hover:bg-gradient-to-r hover:from-blue-600 hover:to-cyan-600 hover:bg-clip-text hover:text-transparent transition-all duration-300 font-medium px-3 py-1 rounded-full hover:scale-105"
+            whileHover={{ y: -1 }}
+          >
+            Skills
+          </motion.a>
+          <motion.a
+            href="#projects"
+            className="text-gray-600 dark:text-gray-300 hover:bg-gradient-to-r hover:from-emerald-600 hover:to-teal-600 hover:bg-clip-text hover:text-transparent transition-all duration-300 font-medium px-3 py-1 rounded-full hover:scale-105"
+            whileHover={{ y: -1 }}
+          >
+            Projects
+          </motion.a>
+          <motion.a
+            href="#highlights"
+            className="text-gray-600 dark:text-gray-300 hover:bg-gradient-to-r hover:from-rose-600 hover:to-pink-600 hover:bg-clip-text hover:text-transparent transition-all duration-300 font-medium px-3 py-1 rounded-full hover:scale-105"
+            whileHover={{ y: -1 }}
+          >
+            Highlights
+          </motion.a>
+          <motion.a
+            href="#contact"
+            className="text-gray-600 dark:text-gray-300 hover:bg-gradient-to-r hover:from-indigo-600 hover:to-purple-600 hover:bg-clip-text hover:text-transparent transition-all duration-300 font-medium px-3 py-1 rounded-full hover:scale-105"
+            whileHover={{ y: -1 }}
+          >
+            Contact
+          </motion.a>
         </motion.div>
       </div>
       <motion.div
@@ -55,7 +99,7 @@ const Footer = ({ isdarkMode }) => {
           © 2025 Samasha Hettiarachchi | Portfolio. All rights reserved.
         </motion.p>
         <motion.ul
-          className="flex items-center gap-8 justify-center mt-6 sm:mt-0"
+          className="flex items-center gap-4 justify-center mt-6 sm:mt-0"
           initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 1.0 }}
@@ -65,12 +109,15 @@ const Footer = ({ isdarkMode }) => {
             transition={{ duration: 0.2 }}
           >
             <a
-              target="blank"
-              href="https://www.linkedin.com/in/samasha-hettiarachchi-123456789/"
-              className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 hover:from-blue-500 hover:via-indigo-500 hover:to-purple-500 bg-clip-text text-transparent font-medium hover:drop-shadow-lg transition-all duration-300 relative group"
+              target="_blank"
+              href="https://www.linkedin.com/in/samasha-hettiarachchi-635a79270/"
+              className="group flex items-center justify-center w-12 h-12 rounded-xl bg-white dark:bg-gray-800/80 dark:backdrop-blur-sm shadow-md hover:shadow-lg dark:shadow-black/30 border border-gray-200 dark:border-gray-600/50 hover:border-blue-300 dark:hover:border-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-all duration-300"
             >
-              LinkedIn
-              <span className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-lg blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+              <Image
+                src={assets.linkedin_icon}
+                alt="LinkedIn"
+                className="w-6 h-6 filter group-hover:brightness-110 dark:brightness-110 dark:group-hover:brightness-125 transition-all duration-300"
+              />
             </a>
           </motion.li>
           <motion.li
@@ -78,12 +125,15 @@ const Footer = ({ isdarkMode }) => {
             transition={{ duration: 0.2 }}
           >
             <a
-              target="blank"
-              href="https://github.com/samasha-hettiarachchi"
-              className="bg-gradient-to-r from-gray-700 via-slate-600 to-gray-800 dark:from-gray-300 dark:via-white dark:to-gray-100 hover:from-gray-600 hover:via-slate-500 hover:to-gray-700 dark:hover:from-gray-200 dark:hover:via-gray-50 dark:hover:to-white bg-clip-text text-transparent font-medium hover:drop-shadow-lg transition-all duration-300 relative group"
+              target="_blank"
+              href="https://github.com/SamashaHettiarachchi"
+              className="group flex items-center justify-center w-12 h-12 rounded-xl bg-white dark:bg-gray-800/80 dark:backdrop-blur-sm shadow-md hover:shadow-lg dark:shadow-black/30 border border-gray-200 dark:border-gray-600/50 hover:border-gray-400 dark:hover:border-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700/30 transition-all duration-300"
             >
-              GitHub
-              <span className="absolute inset-0 bg-gradient-to-r from-gray-500/20 to-slate-500/20 rounded-lg blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+              <Image
+                src={assets.github_icon}
+                alt="GitHub"
+                className="w-6 h-6 filter group-hover:brightness-110 dark:brightness-110 dark:group-hover:brightness-125 transition-all duration-300"
+              />
             </a>
           </motion.li>
           <motion.li
@@ -91,12 +141,31 @@ const Footer = ({ isdarkMode }) => {
             transition={{ duration: 0.2 }}
           >
             <a
-              target="blank"
-              href="https://twitter.com/samasha_hett"
-              className="bg-gradient-to-r from-sky-500 via-blue-500 to-cyan-500 hover:from-sky-400 hover:via-blue-400 hover:to-cyan-400 bg-clip-text text-transparent font-medium hover:drop-shadow-lg transition-all duration-300 relative group"
+              target="_blank"
+              href="https://medium.com/@sashinisamasha"
+              className="group flex items-center justify-center w-12 h-12 rounded-xl bg-white dark:bg-gray-800/80 dark:backdrop-blur-sm shadow-md hover:shadow-lg dark:shadow-black/30 border border-gray-200 dark:border-gray-600/50 hover:border-green-300 dark:hover:border-green-400 hover:bg-green-50 dark:hover:bg-green-900/20 transition-all duration-300"
             >
-              Twitter
-              <span className="absolute inset-0 bg-gradient-to-r from-sky-400/20 to-cyan-400/20 rounded-lg blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+              <Image
+                src={assets.medium_icon}
+                alt="Medium"
+                className="w-6 h-6 filter group-hover:brightness-110 dark:brightness-110 dark:group-hover:brightness-125 transition-all duration-300"
+              />
+            </a>
+          </motion.li>
+          <motion.li
+            whileHover={{ scale: 1.1, y: -2 }}
+            transition={{ duration: 0.2 }}
+          >
+            <a
+              target="_blank"
+              href="https://www.facebook.com/samasha.hettiarachchi"
+              className="group flex items-center justify-center w-12 h-12 rounded-xl bg-white dark:bg-gray-800/80 dark:backdrop-blur-sm shadow-md hover:shadow-lg dark:shadow-black/30 border border-gray-200 dark:border-gray-600/50 hover:border-blue-400 dark:hover:border-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-all duration-300"
+            >
+              <Image
+                src={assets.facebook_icon}
+                alt="Facebook"
+                className="w-6 h-6 filter group-hover:brightness-110 dark:brightness-110 dark:group-hover:brightness-125 transition-all duration-300"
+              />
             </a>
           </motion.li>
         </motion.ul>
