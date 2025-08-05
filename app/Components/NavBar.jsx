@@ -84,9 +84,9 @@ const NavBar = ({ isdarkMode, setIsDarkMode }) => {
           <li>
             <a
               className="font-Ovo dark:text-white hover:bg-gradient-to-r hover:from-cyan-600 hover:to-blue-600 hover:bg-clip-text hover:text-transparent transition-all duration-300 px-3 py-1 rounded-full hover:scale-105"
-              href="#work"
+              href="#projects"
             >
-              Work
+              Projects
             </a>
           </li>
           <li>
@@ -179,9 +179,9 @@ const NavBar = ({ isdarkMode, setIsDarkMode }) => {
             <a
               className="font-Ovo dark:text-white hover:bg-gradient-to-r hover:from-cyan-600 hover:to-blue-600 hover:bg-clip-text hover:text-transparent transition-all duration-300 px-3 py-2 rounded-lg hover:scale-105 block"
               onClick={closeMenu}
-              href="#work"
+              href="#projects"
             >
-              Work
+              Projects
             </a>
           </li>
           <li>
