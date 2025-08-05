@@ -4,6 +4,7 @@ import Header from "./Components/Header";
 import About from "./Components/About";
 import Skills from "./Components/Skills";
 import Projects from "./Components/Projects";
+import Highlights from "./Components/Highlights";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 import { useEffect, useState } from "react";
@@ -39,6 +40,7 @@ export default function Home() {
       <About isdarkMode={isdarkMode} setIsDarkMode={setIsDarkMode} />
       <Skills isdarkMode={isdarkMode} setIsDarkMode={setIsDarkMode} />
       <Projects isdarkMode={isdarkMode} setIsDarkMode={setIsDarkMode} />
+      <Highlights isdarkMode={isdarkMode} setIsDarkMode={setIsDarkMode} />
       <Contact isdarkMode={isdarkMode} setIsDarkMode={setIsDarkMode} />
       <Footer isdarkMode={isdarkMode} setIsDarkMode={setIsDarkMode} />
     </>

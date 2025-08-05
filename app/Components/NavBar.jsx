@@ -91,6 +91,14 @@ const NavBar = ({ isdarkMode, setIsDarkMode }) => {
           </li>
           <li>
             <a
+              className="font-Ovo dark:text-white hover:bg-gradient-to-r hover:from-emerald-600 hover:to-teal-600 hover:bg-clip-text hover:text-transparent transition-all duration-300 px-3 py-1 rounded-full hover:scale-105"
+              href="#highlights"
+            >
+              Highlights
+            </a>
+          </li>
+          <li>
+            <a
               className="font-Ovo dark:text-white hover:bg-gradient-to-r hover:from-rose-600 hover:to-pink-600 hover:bg-clip-text hover:text-transparent transition-all duration-300 px-3 py-1 rounded-full hover:scale-105"
               href="#contact"
             >
@@ -182,6 +190,15 @@ const NavBar = ({ isdarkMode, setIsDarkMode }) => {
               href="#projects"
             >
               Projects
+            </a>
+          </li>
+          <li>
+            <a
+              className="font-Ovo dark:text-white hover:bg-gradient-to-r hover:from-emerald-600 hover:to-teal-600 hover:bg-clip-text hover:text-transparent transition-all duration-300 px-3 py-2 rounded-lg hover:scale-105 block"
+              onClick={closeMenu}
+              href="#highlights"
+            >
+              Highlights
             </a>
           </li>
           <li>

@@ -56,6 +56,12 @@ import aws_icon from "./aws.png";
 import android_studio_icon from "./android-studio-48.png";
 import jwt_icon from "./JWT_token_icon.png";
 
+// Social Media Icons
+import linkedin_icon from "./icons8-linkedin-50.png";
+import github_icon from "./icons8-github-50.png";
+import facebook_icon from "./icons8-facebook-50.png";
+import medium_icon from "./icons8-medium-50.png";
+
 // Skills category icons
 import coding_icon from "./coding.png";
 import framework_icon from "./framework.png";
@@ -128,6 +134,11 @@ export const assets = {
   aws_icon,
   android_studio_icon,
   jwt_icon,
+  // Social Media Icons
+  linkedin_icon,
+  github_icon,
+  facebook_icon,
+  medium_icon,
   // Skills category icons
   coding_icon,
   framework_icon,
@@ -356,6 +367,40 @@ export const infoList = [
     title: "Creative Side",
     description:
       "🎧🖌️✍️ Creative at heart — I love music, fashion design, hand-drawn art, and writing that fuels my thinking beyond code.",
+  },
+];
+
+export const highlightsData = [
+  {
+    type: "blog",
+    title:
+      "How to Build a Document Management System on AWS: S3, RDS, Lambda, and API Gateway from Scratch (Postman Tested)",
+    description:
+      "Comprehensive guide to building a document management system on AWS using S3, RDS, Lambda, API Gateway, and Postman for testing.",
+    date: "Jul 2025",
+    tags: ["AWS", "S3", "RDS", "Lambda", "API Gateway", "Postman"],
+    link: "https://medium.com/@sashinisamasha/how-to-build-a-document-management-system-on-aws-s3-rds-lambda-and-api-gateway-from-scratch-2b1499cf61c3",
+    image: "/aws.jpg",
+  },
+  {
+    type: "blog",
+    title: "Why I Wrote This Article: The Simplest MERN Project",
+    description:
+      "An insightful article about the motivation behind creating beginner-friendly MERN stack tutorials. Sharing the journey of simplifying full-stack development concepts for new developers entering the field.",
+    date: "Aug 2025",
+    tags: ["MERN", "React", "MongoDB", "Tutorial", "Beginner"],
+    link: "https://medium.com/@sashinisamasha/1-why-i-wrote-this-article-the-simplest-mern-project-3026d623889f",
+    image: "/mern.jpg",
+  },
+  {
+    type: "achievement",
+    title: "Top 10 – Innovate with Ballerina (2024)",
+    description:
+      "Recognized among the most popular innovations in the prestigious Innovate with Ballerina competition. Organized by IEEE Student Branch at University of Moratuwa in collaboration with WSO2, showcasing cutting-edge development skills.",
+    date: "2024",
+    tags: ["Innovation", "Ballerina", "IEEE", "WSO2", "University"],
+    link: "https://www.linkedin.com/posts/samasha-hettiarachchi-635a79270_innovatewithballerina-ballerinalang-wso2-activity-7260923467951153153-KG7R?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEJdr0kBlVHSPHx0XepYKWJpHie8IXnz2wc",
+    image: "/ballerina.jpg",
   },
 ];
 
