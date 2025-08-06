@@ -34,7 +34,10 @@ const Projects = ({ isdarkMode }) => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.7 }}
       >
-        A selection of projects that showcase my skills in full-stack development, problem-solving, and building real-world applications. Each project reflects my commitment to clean code, user-centered design, and practical solutions.
+        A selection of projects that showcase my skills in full-stack
+        development, problem-solving, and building real-world applications. Each
+        project reflects my commitment to clean code, user-centered design, and
+        practical solutions.
       </motion.p>
       <motion.div
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 my-10 gap-8"

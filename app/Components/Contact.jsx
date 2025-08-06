@@ -59,13 +59,9 @@ const Contact = ({ isdarkMode }) => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.7 }}
       >
-        I offer a range of services to help you build and enhance your web
-        presence. From responsive web design to front-end development using
-        modern frameworks, I am dedicated to delivering high-quality,
-        user-friendly solutions tailored to your needs. Whether you need a new
-        website, an update to an existing one, or assistance with specific
-        features, I am here to help bring your vision to life. Let's work
-        together to create something amazing!
+        Have a question, an idea, or just want to say hello? I’d love to hear from you! Feel free to drop a message anytime — let’s connect and share some good vibes ❤️
+
+
       </motion.p>
       <motion.form
         onSubmit={onSubmit}
