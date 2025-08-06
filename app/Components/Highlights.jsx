@@ -96,6 +96,8 @@ const Highlights = ({ isdarkMode }) => {
                   <Image
                     src={assets.send_icon}
                     alt="Read More"
+                    width={20}
+                    height={20}
                     className="w-5 h-5"
                   />
                 </div>
@@ -175,6 +177,8 @@ const Highlights = ({ isdarkMode }) => {
             isdarkMode ? assets.right_arrow_bold_dark : assets.right_arrow_bold
           }
           alt="Arrow Icon"
+          width={16}
+          height={16}
           className="w-4 inline"
         />
       </motion.a>

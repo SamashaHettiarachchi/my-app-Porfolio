@@ -122,6 +122,8 @@ const Contact = ({ isdarkMode }) => {
           <Image
             src={assets.right_arrow_white}
             alt="Arrow Icon"
+            width={16}
+            height={16}
             className="w-4"
           />
         </motion.button>

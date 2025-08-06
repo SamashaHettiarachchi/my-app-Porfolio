@@ -40,6 +40,8 @@ const About = ({ isdarkMode }) => {
           <Image
             src={assets.user_image}
             alt="user"
+            width={400}
+            height={400}
             className="w-full rounded-3xl relative z-10 shadow-2xl shadow-purple-500/20 group-hover:shadow-3xl group-hover:shadow-pink-500/30 transition-all duration-500 ring-4 ring-white/50 dark:ring-purple-500/30 group-hover:ring-pink-400/50"
           />
         </motion.div>
@@ -83,6 +85,8 @@ const About = ({ isdarkMode }) => {
                     <Image
                       src={isdarkMode ? iconDark : icon}
                       alt={title}
+                      width={32}
+                      height={32}
                       className="w-8 h-8 group-hover:brightness-110 transition-all duration-300"
                     />
                   </div>

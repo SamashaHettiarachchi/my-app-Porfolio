@@ -5,8 +5,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
     // Disable Sharp for static export compatibility
-    loader: 'custom',
-    loaderFile: './image-loader.js'
+    loader: "custom",
+    loaderFile: "./image-loader.js",
   },
   // External packages configuration for deployment
   serverExternalPackages: ["sharp"],

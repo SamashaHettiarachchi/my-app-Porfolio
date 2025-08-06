@@ -23,6 +23,8 @@ const Footer = ({ isdarkMode }) => {
           <Image
             src={isdarkMode ? assets.logo_dark : assets.logo}
             alt=""
+            width={144}
+            height={144}
             className="w-36 mx-auto mb-2 relative z-10 group-hover:drop-shadow-lg group-hover:drop-shadow-purple-500/30 transition-all duration-300"
           />
         </motion.div>
@@ -35,6 +37,8 @@ const Footer = ({ isdarkMode }) => {
           <Image
             src={isdarkMode ? assets.mail_icon_dark : assets.mail_icon}
             alt=""
+            width={24}
+            height={24}
             className="w-6 opacity-80"
           />
           sashinisamasha@gmail.com
@@ -116,6 +120,8 @@ const Footer = ({ isdarkMode }) => {
               <Image
                 src={assets.linkedin_icon}
                 alt="LinkedIn"
+                width={24}
+                height={24}
                 className="w-6 h-6 filter group-hover:brightness-110 dark:brightness-110 dark:group-hover:brightness-125 transition-all duration-300"
               />
             </a>
@@ -132,6 +138,8 @@ const Footer = ({ isdarkMode }) => {
               <Image
                 src={assets.github_icon}
                 alt="GitHub"
+                width={24}
+                height={24}
                 className="w-6 h-6 filter group-hover:brightness-110 dark:brightness-110 dark:group-hover:brightness-125 transition-all duration-300"
               />
             </a>
@@ -148,6 +156,8 @@ const Footer = ({ isdarkMode }) => {
               <Image
                 src={assets.medium_icon}
                 alt="Medium"
+                width={24}
+                height={24}
                 className="w-6 h-6 filter group-hover:brightness-110 dark:brightness-110 dark:group-hover:brightness-125 transition-all duration-300"
               />
             </a>
@@ -164,6 +174,8 @@ const Footer = ({ isdarkMode }) => {
               <Image
                 src={assets.facebook_icon}
                 alt="Facebook"
+                width={24}
+                height={24}
                 className="w-6 h-6 filter group-hover:brightness-110 dark:brightness-110 dark:group-hover:brightness-125 transition-all duration-300"
               />
             </a>

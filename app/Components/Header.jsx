@@ -18,6 +18,8 @@ const Header = ({ isdarkMode }) => {
           src={assets.profile_img}
           alt=""
           className="rounded-full w-32 ring-4 ring-orange-300 dark:ring-orange-500 shadow-2xl shadow-orange-500/30"
+          width={128}
+          height={128}
         />
       </motion.div>
       <motion.h3
@@ -27,7 +29,13 @@ const Header = ({ isdarkMode }) => {
         className="flex items-end gap-2 text-xl md:text-2xl md-3 font-Ovo bg-gradient-to-r from-orange-600 via-red-500 to-pink-500 bg-clip-text text-transparent font-medium"
       >
         Hi! I'm Samasha Hettiarachchi{" "}
-        <Image src={assets.hand_icon} alt="" className="w-6" />
+        <Image
+          src={assets.hand_icon}
+          alt=""
+          className="w-6"
+          width={24}
+          height={24}
+        />
       </motion.h3>
       <motion.h1
         initial={{ y: -30, opacity: 0 }}
@@ -57,18 +65,13 @@ const Header = ({ isdarkMode }) => {
           className="px-10 py-3 rounded-full bg-gradient-to-r from-purple-600 via-pink-600 to-orange-600 hover:from-purple-500 hover:via-pink-500 hover:to-orange-500 text-white font-medium flex items-center gap-2 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/30 border border-white/20"
         >
           Contact me
-          <Image src={assets.right_arrow_white} alt="" className="w-4" />
-        </motion.a>
-        <motion.a
-          initial={{ y: 30, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.6, delay: 1.2 }}
-          href="/sample-resume.pdf"
-          download
-          className="px-10 py-3 rounded-full bg-gradient-to-r from-gray-100 to-white hover:from-white hover:to-gray-50 dark:from-gray-800 dark:to-gray-700 dark:hover:from-gray-700 dark:hover:to-gray-600 text-gray-800 dark:text-white font-medium flex items-center gap-2 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-gray-500/20 border border-gray-300 dark:border-gray-600"
-        >
-          my resume
-          <Image src={assets.download_icon} alt="" className="w-4" />
+          <Image
+            src={assets.right_arrow_white}
+            alt=""
+            className="w-4"
+            width={16}
+            height={16}
+          />
         </motion.a>
       </div>
     </div>

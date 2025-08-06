@@ -32,7 +32,7 @@ const NavBar = ({ isdarkMode, setIsDarkMode }) => {
   return (
     <>
       <div className="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden">
-        <Image src={assets.header_bg_color} alt="" className="w-full" />
+        <Image src={assets.header_bg_color} alt="" width={1000} height={600} className="w-full" />
       </div>
       <nav
         className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${
@@ -48,6 +48,8 @@ const NavBar = ({ isdarkMode, setIsDarkMode }) => {
             src={isdarkMode ? assets.logo_dark : assets.logo}
             className="w-20 cursor-pointer mr-4 relative z-10 transition-all duration-300 ease-in-out hover:scale-105 hover:drop-shadow-lg hover:drop-shadow-purple-500/30"
             alt=""
+            width={80}
+            height={80}
           />
         </a>
         <ul
@@ -117,6 +119,8 @@ const NavBar = ({ isdarkMode, setIsDarkMode }) => {
               src={isdarkMode ? assets.sun_icon : assets.moon_icon}
               alt={isdarkMode ? "Light mode" : "Dark mode"}
               className="w-5"
+              width={20}
+              height={20}
             />
           </button>
 
@@ -129,6 +133,8 @@ const NavBar = ({ isdarkMode, setIsDarkMode }) => {
               src={isdarkMode ? assets.arrow_icon_dark : assets.arrow_icon}
               className="w-3"
               alt=""
+              width={12}
+              height={12}
             />
           </a>
           <button
@@ -140,6 +146,8 @@ const NavBar = ({ isdarkMode, setIsDarkMode }) => {
               src={isdarkMode ? assets.menu_white : assets.menu_black}
               alt=""
               className="w-6"
+              width={24}
+              height={24}
             />
           </button>
         </div>
@@ -154,6 +162,8 @@ const NavBar = ({ isdarkMode, setIsDarkMode }) => {
               src={isdarkMode ? assets.close_white : assets.close_black}
               alt=""
               className="w-5 cursor-pointer hover:scale-110 transition-transform duration-200"
+              width={20}
+              height={20}
             />
           </div>
           <li>
