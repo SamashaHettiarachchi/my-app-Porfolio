@@ -68,6 +68,8 @@ const Skills = ({ isdarkMode }) => {
                     <Image
                       src={icon}
                       alt={title}
+                      width={32}
+                      height={32}
                       className="w-8 h-8 group-hover:brightness-125 transition-all duration-300"
                     />
                   </div>
@@ -101,6 +103,8 @@ const Skills = ({ isdarkMode }) => {
                       <Image
                         src={tech.icon}
                         alt={tech.name}
+                        width={40}
+                        height={40}
                         className="w-10 h-10 group-hover/tech:brightness-110 transition-all duration-300"
                       />
                     </div>
