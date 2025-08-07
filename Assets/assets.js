@@ -103,7 +103,7 @@ export const workData = [
       "MongoDB",
     ],
     category: "Healthcare Tech",
-    demoUrl: "#", // Add your live demo URL here
+    demoUrl: "https://level-2-software-project.vercel.app", // Add your live demo URL here
     githubUrl:
       "https://github.com/AymanTechGlobal/atg-healthcare-careplan-manager", // Add your GitHub repository URL here
     detailsUrl: "#", // Add your project details URL here
